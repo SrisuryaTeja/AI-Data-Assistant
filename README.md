@@ -10,7 +10,7 @@ This project aims to build an AI Assistant designed to make your data science li
 - **Model Selection:** Get recommendations for the best machine learning models based on your data and project requirements.
 - **Prediction:** Make predictions using trained models with user-friendly interfaces.
 - **User-Friendly Interface:** Built with Streamlit for a seamless user experience.
-- **Integrations:** Utilizes LangChain for managing data and OpenAI’s GPT models for intelligent assistance.
+- **Integrations:** Utilizes LangChain for managing data and Open source models for intelligent assistance.
 
 ## Requirements
 

@@ -15,14 +15,11 @@ jobs:
           fetch-depth: 0
           lfs: true
           
-      - name: Set up API Tokens
-        env:
-          HUGGINGFACEHUB_API_TOKEN: ${{ secrets.HUGGINGFACEHUB_API_TOKEN }}
-          PINECONE_API_KEY: ${{ secrets.PINECONE_API_KEY }} # Add Pinecone API token here
-
       - name: Push to Hugging Face Hub
         run: git push https://Srisurya-teja:${{ secrets.HUGGINGFACEHUB_API_TOKEN }}@huggingface.co/spaces/Srisurya-teja/SPACE_NAME main
-        
+        env:
+          HUGGINGFACEHUB_API_TOKEN: ${{ secrets.HUGGINGFACEHUB_API_TOKEN }}
+
       # Add steps for Pinecone if needed
       # Example: If you have an integration step with Pinecone
       - name: Use Pinecone API

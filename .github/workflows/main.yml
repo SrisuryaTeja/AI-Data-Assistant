@@ -16,7 +16,7 @@ jobs:
           lfs: true
           
       - name: Push to Hugging Face Hub
-        run: git push --force https://Srisurya-teja:${{ secrets.HUGGINGFACEHUB_API_TOKEN }}@huggingface.co/spaces/Srisurya-teja/Srisurya-teja/AI-Data_Assistant main
+        run: git push --force https://Srisurya-teja:${{ secrets.HUGGINGFACEHUB_API_TOKEN }}@huggingface.co/spaces/Srisurya-teja/AI-Data_Assistant main
         env:
           HUGGINGFACEHUB_API_TOKEN: ${{ secrets.HUGGINGFACEHUB_API_TOKEN }}
 
